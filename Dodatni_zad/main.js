@@ -2,22 +2,17 @@ function minuteUSekunde(minutes) {
     return minutes * 60;
 }
 
-function povrsinaTrokuta(osnovica, visina) {
-    return (osnovica * visina) / 2;
+function povrsinaTrokuta(base, height) {
+    return (base * height) / 2;
 }
 
-var matematika = {
-    minuteUSekunde: function(minutes) {
-        return minutes * 60;
-    },
+var ja = {
+    ime: "Novak",
+    prezime: "Sljuka",
 
-    povrsinaTrokuta: function(osnovica, visina) {
-        return (osnovica * visina) / 2;
+    punoIme: function() {
+        return this.ime + " " + this.prezime;
     }
 };
 
-
-console.log(povrsinaTrokuta(10, 5)); 
-
-console.log(matematika.minuteUSekunde(3));
-console.log(matematika.povrsinaTrokuta(8, 4)); 
+console.log(ja.punoIme());
